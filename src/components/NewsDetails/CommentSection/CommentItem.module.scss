@@ -1,0 +1,37 @@
+@import "../../scssExport.scss";
+
+.comment {
+  position: relative;
+  z-index: 2;
+  color: $dark;
+  padding-bottom: 0.3rem;
+  & > div:hover {
+    background-color: rgb(219, 219, 219);
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .author {
+    width: fit-content;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    background-color: rgb(219, 219, 219);
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+    color: #112d32;
+    font-weight: 500;
+  }
+  .commentText {
+    overflow: hidden;
+  }
+  .subComment {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 1rem;
+  }
+  .threeDote {
+    color: $dark;
+    font-size: $size-normal;
+  }
+}

@@ -1,0 +1,27 @@
+@import "./components/scssExport.scss";
+.global_container {
+  z-index: 1;
+  background-color: $dark;
+  .back {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background: linear-gradient(100deg, #5f6366 50%, #86b3d1 50%);
+  }
+  color: $light;
+  min-height: 100vh;
+  min-width: calc(100vw - 8px);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 961px) {
+  .global_container {
+    padding-top: 0.5rem;
+  }
+}
