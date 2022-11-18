@@ -1,9 +1,15 @@
-# Hi!
+# Привет!
 
-## 2 steps to start my project:
-1. Download the project from this repository
-2. Write these commands in the terminal:
+Приложения для просмотра новостей.
+Использовался API Hacker News.
+Реализовано на React/TypeScript.
+Адаптивная верстка под Desktop и mobile устройства.
+
+## 2 шага для запуска проекта на localhost:3000:
+1. Загрузить проект с репозитория
+2. Нописать следующие команды в терминале:
 - yarn install  
 - yarn start  
 
-Here is my project on Vercel: https://internship-frontend-news.vercel.app/
+
+Ссылка на проект Vercel: https://internship-frontend-news.vercel.app/
