@@ -109,7 +109,7 @@ function App() {
 
   return (
     <div className={styles.global_container}>
-      <main>
+      <section>
         <Suspense fallback={<LoaderRing className={RingStyles.fallback} />}>
           <Routes>
             <Route
@@ -130,7 +130,7 @@ function App() {
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Suspense>
-      </main>
+      </section>
     </div>
   );
 }
