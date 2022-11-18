@@ -30,13 +30,20 @@ const CommentItem: React.FC<{
         }}
       >
         <p className={styles.author}>{props.commentItem.by}</p>
-        <p id={`${props.commentItem.id}`} className={styles.commentText}></p>
-        {isThereAnyKids && (
-          <div className={styles.subComments}>
-            <IonIcon name="return-down-forward" />
-            {!showKids ? <span className={styles.threeDote}>...</span> : null}
-          </div>
-        )}
+        <p
+          id={`${props.commentItem.id}`}
+          className={`${styles.commentText} ${
+            !isThereAnyKids ? styles.margBott : null
+          }`}
+        ></p>
+        <div className={styles.subComments}>
+          {isThereAnyKids && (
+            <>
+              <IonIcon name="return-down-forward" />
+              {!showKids ? <span className={styles.threeDote}>...</span> : null}
+            </>
+          )}
+        </div>
       </div>
       {showKids && isThereAnyKids && props.commentItem.kids && (
         <Comments ids={props.commentItem.kids} marginLeft={3} />
